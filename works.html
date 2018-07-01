@@ -1,0 +1,342 @@
+<html>
+<head>
+  <title> Laura </title>
+  <link rel="stylesheet" href="works.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <script src="works.js"> </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+
+<body onload="myFunction()">
+  <div id="barra"> </div>
+  <div style="display:none;" id="EntirePage" class="animate-bottom">
+
+
+<div id="title"> Laura </div>
+<div id="title2"> HAND LETTERING by </div>
+
+
+<div id="header">
+  <a href="https://www.instagram.com/ual.ien/" target="_blank">
+  <img id="icons" src="icons/2.jpg"></a>
+  <a href="https://www.facebook.com/laura.pagliuca.3" target="_blank">
+  <img id="icons" src="icons/1.jpg"></a>
+  <a href="https://www.pinterest.co.uk/pagliucalaura/" target="_blank">
+  <img id="icons" src="icons/3.jpg"></a>
+  <a href="http://tendermine.tumblr.com/" target="_blank">
+  <img id="icons" src="icons/4.jpg"></a>
+</div>
+
+
+
+<div id="nav">
+
+<center>
+<ul>
+  <li><a href="index.html" id="elements"> home </li></a>
+  <li><a href="works.html" id="current"> my works </li></a></a>
+  <li><a href="material.html" id="elements"> materials </li></a>
+</ul>
+</div>
+
+
+
+<div id="row">
+<img id="foto1" src="scan/4.jpg">
+<img id="foto2" src="scan/2.jpg">
+<img id="foto3" src="scan/3.jpg">
+<img id="foto4" src="scan/1.jpg">
+<img id="foto5" src="scan/5.jpg">
+<img id="foto6" src="scan/6.jpg">
+<img id="foto7" src="scan/7.jpg">
+<img id="foto8" src="scan/8.jpg">
+<img id="foto9" src="scan/9.jpg">
+<img id="foto10" src="scan/10.jpg">
+<img id="foto11" src="scan/11.jpg">
+<img id="foto12" src="scan/12.jpg">
+
+</div>
+
+<div id="myModal1" class="modal1">
+  <span class="close1">&times;</span>
+  <img class="modal-content1" id="img01">
+</div>
+
+<div id="myModal2" class="modal2">
+  <span class="close2">&times;</span>
+  <img class="modal-content2" id="img02">
+</div>
+
+<div id="myModal3" class="modal3">
+  <span class="close3">&times;</span>
+  <img class="modal-content3" id="img03">
+</div>
+
+<div id="myModal4" class="modal4">
+  <span class="close4">&times;</span>
+  <img class="modal-content4" id="img04">
+</div>
+
+<div id="myModal5" class="modal5">
+  <span class="close5">&times;</span>
+  <img class="modal-content5" id="img05">
+</div>
+
+<div id="myModal6" class="modal6">
+  <span class="close6">&times;</span>
+  <img class="modal-content6" id="img06">
+</div>
+
+<div id="myModal7" class="modal7">
+  <span class="close7">&times;</span>
+  <img class="modal-content7" id="img07">
+</div>
+
+<div id="myModal8" class="modal8">
+  <span class="close8">&times;</span>
+  <img class="modal-content8" id="img08">
+</div>
+
+<div id="myModal9" class="modal9">
+  <span class="close9">&times;</span>
+  <img class="modal-content9" id="img09">
+</div>
+
+<div id="myModal10" class="modal10">
+  <span class="close10">&times;</span>
+  <img class="modal-content10" id="img010">
+</div>
+
+<div id="myModal11" class="modal11">
+  <span class="close11">&times;</span>
+  <img class="modal-content11" id="img011">
+</div>
+
+<div id="myModal12" class="modal12">
+  <span class="close12">&times;</span>
+  <img class="modal-content12" id="img012">
+</div>
+
+<div id="linea"></div>
+
+</div>
+</body>
+
+<script>
+
+/*caricamento-spinner/barra*/
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("barra").style.display = "none";
+  document.getElementById("EntirePage").style.display = "block";
+}
+
+/*immagine1*/
+var modal1 = document.getElementById('myModal1');
+
+var img = document.getElementById('foto1');
+var modal1Img = document.getElementById("img01");
+img.onclick = function(){
+    modal1.style.display = "block";
+    modal1Img.src = this.src;
+}
+
+var span = document.getElementsByClassName("close1")[0];
+
+span.onclick = function() {
+    modal1.style.display = "none";
+}
+
+/*immagine2*/
+var modal2 = document.getElementById('myModal2');
+
+var img = document.getElementById('foto2');
+var modal2Img = document.getElementById("img02");
+img.onclick = function(){
+    modal2.style.display = "block";
+    modal2Img.src = this.src;
+}
+
+var span = document.getElementsByClassName("close2")[0];
+
+span.onclick = function() {
+    modal2.style.display = "none";
+}
+
+/*immagine3*/
+var modal3 = document.getElementById('myModal3');
+
+var img = document.getElementById('foto3');
+var modal3Img = document.getElementById("img03");
+img.onclick = function(){
+    modal3.style.display = "block";
+    modal3Img.src = this.src;
+}
+
+var span = document.getElementsByClassName("close3")[0];
+
+span.onclick = function() {
+    modal3.style.display = "none";
+}
+
+
+/*immagine4*/
+var modal4 = document.getElementById('myModal4');
+
+var img = document.getElementById('foto4');
+var modal4Img = document.getElementById("img04");
+img.onclick = function(){
+    modal4.style.display = "block";
+    modal4Img.src = this.src;
+}
+
+var span = document.getElementsByClassName("close4")[0];
+
+span.onclick = function() {
+    modal4.style.display = "none";
+}
+
+/*immagine5*/
+var modal5 = document.getElementById('myModal5');
+
+var img = document.getElementById('foto5');
+var modal5Img = document.getElementById("img05");
+img.onclick = function(){
+    modal5.style.display = "block";
+    modal5Img.src = this.src;
+}
+
+var span = document.getElementsByClassName("close5")[0];
+
+span.onclick = function() {
+    modal5.style.display = "none";
+}
+
+
+
+/*immagine6*/
+var modal6 = document.getElementById('myModal6');
+
+var img = document.getElementById('foto6');
+var modal6Img = document.getElementById("img06");
+img.onclick = function(){
+    modal6.style.display = "block";
+    modal6Img.src = this.src;
+}
+
+var span = document.getElementsByClassName("close6")[0];
+
+span.onclick = function() {
+    modal6.style.display = "none";
+}
+
+/*immagine7*/
+var modal7 = document.getElementById('myModal7');
+
+var img = document.getElementById('foto7');
+var modal7Img = document.getElementById("img07");
+img.onclick = function(){
+    modal7.style.display = "block";
+    modal7Img.src = this.src;
+}
+
+var span = document.getElementsByClassName("close7")[0];
+
+span.onclick = function() {
+    modal7.style.display = "none";
+}
+
+/*immagine8*/
+var modal8 = document.getElementById('myModal8');
+
+var img = document.getElementById('foto8');
+var modal8Img = document.getElementById("img08");
+img.onclick = function(){
+    modal8.style.display = "block";
+    modal8Img.src = this.src;
+}
+
+var span = document.getElementsByClassName("close8")[0];
+
+span.onclick = function() {
+    modal8.style.display = "none";
+}
+
+/*immagine9*/
+var modal9 = document.getElementById('myModal9');
+
+var img = document.getElementById('foto9');
+var modal9Img = document.getElementById("img09");
+img.onclick = function(){
+    modal9.style.display = "block";
+    modal9Img.src = this.src;
+}
+
+var span = document.getElementsByClassName("close9")[0];
+
+span.onclick = function() {
+    modal9.style.display = "none";
+}
+
+/*immagine10*/
+var modal10 = document.getElementById('myModal10');
+
+var img = document.getElementById('foto10');
+var modal10Img = document.getElementById("img010");
+img.onclick = function(){
+    modal10.style.display = "block";
+    modal10Img.src = this.src;
+}
+
+var span = document.getElementsByClassName("close10")[0];
+
+span.onclick = function() {
+    modal10.style.display = "none";
+}
+
+/*immagine11*/
+var modal11 = document.getElementById('myModal11');
+
+var img = document.getElementById('foto11');
+var modal11Img = document.getElementById("img011");
+img.onclick = function(){
+    modal11.style.display = "block";
+    modal11Img.src = this.src;
+}
+
+
+var span = document.getElementsByClassName("close11")[0];
+
+
+span.onclick = function() {
+    modal11.style.display = "none";
+}
+
+/*immagine12*/
+var modal12 = document.getElementById('myModal12');
+
+var img = document.getElementById('foto12');
+var modal12Img = document.getElementById("img012");
+img.onclick = function(){
+    modal12.style.display = "block";
+    modal12Img.src = this.src;
+}
+
+
+var span = document.getElementsByClassName("close12")[0];
+
+
+span.onclick = function() {
+    modal12.style.display = "none";
+}
+
+
+</script>
+</html>

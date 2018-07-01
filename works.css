@@ -1,0 +1,297 @@
+@font-face {
+  font-family: Evita Freebies;
+  src: url('Evita_FREEBIES.ttf') format('truetype');
+}
+@font-face {
+  font-family: Lato;
+  src:  url('lato/Lato-Regular.ttf') format('truetype'),
+  url('lato/Lato-Hairline.ttf') format('truetype');
+}
+
+@keyframes caricamento {
+  from {width: 0%;}
+  to {width: 100%;}
+}
+
+#barra {
+  animation: caricamento 2s infinite;
+  background-color: pink;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 190px;
+  z-index: 1;
+}
+
+#barra:hover {
+  width: 150px;
+  transition: all 10s;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+#EntirePage {
+  display: none;
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:0px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:0px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+
+/* title of the page */
+
+#title {
+  font-family: Evita Freebies;
+  font-size: 5em;
+  position: absolute;
+  left: 50%; top: 110px;
+  transform: translate(-50%, -50%);
+}
+
+#title2 {
+  font-family: Lato;
+  position: absolute;
+  top: 78px; left: 52%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+}
+
+
+/* navigation bar */
+
+#current {
+  text-decoration: none;
+  float: left;
+  margin-left: 50px;
+  color: pink;
+  margin-top: 0px;
+  position:relative;
+  transition: 0.6s ease;
+}
+
+#current:hover {
+  color: white;
+}
+
+
+
+#elements {
+  text-decoration: none;
+  float: left;
+  margin-left: 50px;
+  color: black;
+  margin-top: 0px;
+  transition: 0.6s ease;
+
+}
+
+
+#nav {
+background-color: white;
+opacity: .5;
+width:100%;
+height: 50px;
+position: absolute;
+top: 0px;
+left: 0px;
+position: fixed;
+z-index: 1;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  font-family: Lato;
+
+}
+
+
+
+#elements:hover {
+  color: white;
+}
+
+/* gallery */
+
+img {
+  width: 29%;
+
+  top: 0;
+  margin: 7px;
+  align-content: center;
+}
+
+img:hover {
+  opacity: .7;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+
+#row {
+  top: 240px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: 0;
+  align-content: center;
+}
+
+/* fine header */
+
+#linea {
+  width: 100%;
+  height: 2px;
+  background-color: pink;
+  position: absolute;
+  left: 0px;
+  top: 190px;
+  margin: 0px;
+}
+
+/* icons */
+
+#header {
+
+right: 0px;
+position: absolute;
+width: 30%;
+top: 150px;
+right: 2%;
+}
+
+#icons {
+width: 7%;
+float: right;
+padding-left: 0%;
+}
+
+/*popup immagini*/
+
+
+.modal1, .modal2, .modal3, .modal4, .modal5, .modal6,
+.modal7, .modal8, .modal9, .modal10, .modal11, .modal12 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+
+.modal-content1, .modal-content2, .modal-content3,
+.modal-content4, .modal-content5, .modal-content6,
+.modal-content7, .modal-content8, .modal-content9,
+.modal-content10, .modal-content11, .modal-content12 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+/* animazione */
+.modal-content1, .modal-content2, .modal-content3,
+.modal-content4, .modal-content5, .modal-content6,
+.modal-content7, .modal-content8, .modal-content9,
+.modal-content10, .modal-content11, .modal-content12 {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* close button */
+.close1, .close2, .close3, .close4, .close5, .close6,
+.close7, .close8, .close9, .close10, .close11, .close12 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+.close1:hover,
+.close2:hover,
+.close3:hover,
+.close4:hover,
+.close5:hover,
+.close6:hover,
+.close7:hover,
+.close8:hover,
+.close9:hover,
+.close10:hover,
+.close11:hover,
+.close12:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content1, .modal-content2, .modal-content3,
+    .modal-content4, .modal-content5, .modal-content6,
+    .modal-content7, .modal-content8, .modal-content9,
+    .modal-content10, .modal-content11, .modal-content12 {
+        width: 100%;
+    }
+}
